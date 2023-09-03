@@ -3,11 +3,12 @@
 """
 1. company website
 2. owner name
-3. owner email
-4. owner phone #
-5. broker name
-6. broker phone #
-7. broker email
+3. sale price
+4. owner email
+5. owner phone #
+6. broker name
+7. broker phone #
+8. broker email
 """
 
 # to implement: filter by company ARR 
