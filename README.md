@@ -5,10 +5,10 @@ While I was taking Professor Damodaran's Equity Valuation class, I realized that
 
 So I decided to build a DCF tool that pulls Damodaran's artfully derived assumptions (industry betas, risk premiums, country risk factors, etc...) from his website to discount cash flows input by a user. The program lets anyone with a base year cash flow statement and certain key assumptions (revenue growth, EBIT margins...) quickly create a DCF Model and export as an Excel sheet.
 
-This is the architecture of the project:
-- Frontend: React
-- API: Spring
-- Backend Server: Java
+This is the architecture of the project: <br />
+- Frontend: React<br />
+- API: Spring<br />
+- Backend Server: Java<br />
 - Database: mySQL
 
 
