@@ -1,5 +1,9 @@
-# personal
 Personal Projects
+
+## Discounted Cash Flow Valuator: ##
+While I was taking Professor Damodaran's Equity Valuation class, I realized that most of the work for a DCF could be automated. He emphasizes that valuations are more of an art than a science—which I agree with—however, the artful part is correctly estimating each assumption (market beta, growth estimates, margins, etc...). The actual projections and discounting is purely manual work, no nuance required. 
+
+So I decided to build a DCF tool that pulls Damodaran's artfully derived assumptions (industry betas, risk premiums, country risk factors, etc...) from his website to discount cash flows input by a user. The program lets anyone with a base year cash flow statement and certain key assumptions (revenue growth, EBIT margins...) quickly create a DCF Model and export as an Excel sheet.
 
 
 ## Webscraper: ##
@@ -18,4 +22,5 @@ compiling the following info from the broker sites:
 
 This tool saved me and the other analysts countless number of hours of menial labor. 
 *Note* BizBuySell has updated their website and changed/removed tags for certain information, program does not work like it should
-   
+
+
