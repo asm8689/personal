@@ -16,6 +16,7 @@
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
+import csv
 
 # URL of the target page
 base_url = "https://www.bizbuysell.com/california/agriculture-businesses-for-sale/?q="
@@ -32,13 +33,21 @@ soup = BeautifulSoup(page_content, "html.parser")
 # Find all the listings on the page
 listings = soup.find_all("li", class_="listing-row")
 
+csv_file = open("business_listings.csv", "w", newline="", encoding="utf-8")
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(["Company URL", "Owner Name", "Sale Price", "Owner Phone", "Owner Email", "Broker Name", "Broker Email"])
+
 # Loop through each listing and extract the required information
 for listing in listings:
     company_url = listing.find("a", class_="listing-row-link")["href"]
     owner_name = listing.find("div", class_="listing-owner").get_text(strip=True)
     sale_price = listing.find("div", class_="listing-price").get_text(strip=True)
+    owner_phone = listing.find("div", class_="listing-phone").get_text(strip=True)
+    owner_email = listing.find("div", class_="listing-email").get_text(strip=True)
+    broker_name = listing.find("div", class_="listing-broker-name").get_text(strip=True)
+    broker_email = listing.find("div", class_="listing-broker-email").get_text(strip=True)
 
-    print("Company URL:", company_url)
-    print("Owner Name:", owner_name)
-    print("Sale Price:", sale_price)
-    print("=" * 40)  # Print a separator between listings
+    csv_writer.writerow([company_url, owner_name, sale_price, owner_phone, owner_email, broker_name, broker_email])
+
+csv_file.close()
+print("Data has been scraped and saved to business_listings.csv")
