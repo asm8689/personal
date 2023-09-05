@@ -28,6 +28,6 @@ compiling the following info from the broker sites:
 10. Broker phone #
 
 This tool saved me and the other analysts countless number of hours of menial labor. 
-*Note* BizBuySell has updated their website and changed/removed tags for certain information, program does not work like it should
+*Note* BizBuySell has updated their website and changed/removed HTML classes/id for certain information, program does not work like it should
 
 
