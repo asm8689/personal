@@ -8,7 +8,7 @@ So I decided to build a DCF tool that pulls Damodaran's artfully derived assumpt
 
 
 
-## Webscraper: ##
+## Business Broker Webscraper: ##
 I built this tool to scrape key data from business broker websites. Previously, I was tasked with manually 
 compiling the following info from the broker sites:
 1. Company website
